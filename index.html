@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Rayan | Cybersecurity</title>
+</head>
+<body>
+
+    <div class="header-bar" id="headerBar">
+    <header>
+        <a class="brand" href="#top" aria-label="Rayan home">
+            <span class="brand-shield"><i class="fa-solid fa-shield-halved"></i></span>
+            <span class="brand-name">rayan<span>cyber</span></span>
+        </a>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+         <nav class="navigation" id="navMenu">
+            <ul>
+               <li><a href="#aboutMe">About Me</a></li>
+               <li><a href="#skills">Skills</a></li>
+               <li><a href="#experience">Experience</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+               <li><a href="#projects">Projects</a></li>
+               <li><a href="#contactMe">Contact</a></li>
+            </ul>
+         </nav>
+    </header>
+    <hr />
+    </div>
+
+    <main id="top">
+    <section class="hero">
+
+        <div class="hero-grid-bg" aria-hidden="true"></div>
+
+        <div class="hero-text">
+            <div class="hero-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2 L20 6 V12 C20 17 16.5 20.5 12 22 C7.5 20.5 4 17 4 12 V6 Z"></path>
+                    <path d="M9 12 l2 2 4-4"></path>
+                </svg>
+                <span>SOC Analyst | Cybersecurity Graduate</span>
+            </div>
+
+            <p class="hero-greeting">I'm Rayan</p>
+            <h1 class="hero-title">Cybersecurity</h1>
+            <p class="hero-subtitle">CompTIA Security+ | SIEM Monitoring | Incident Response</p>
+
+            <div class="hero-buttons">
+    <a href="#aboutMe" class="btn btn-primary">
+        Hire me
+    </a>
+
+    <a
+        href="assets/Rayan-Cyber-CV.pdf"
+        class="btn btn-secondary"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        View CV
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+    </a>
+
+    <a
+        href="assets/Rayan-Cyber-CV.pdf"
+        class="btn btn-secondary"
+        download="Rayan-Hadadi-CV.pdf"
+    >
+        Download CV
+        <i class="fa-solid fa-download"></i>
+    </a>
+</div>
+</div>
+
+        </div>
+
+        <div class="hero-illustration">
+            <svg viewBox="0 0 600 560" xmlns="http://www.w3.org/2000/svg">
+
+                <!-- minimal supporting icons, quiet and few -->
+                <g fill="none" stroke="#3d8bff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.55">
+
+                    <!-- shield top-left -->
+                    <path d="M95 95 L118 86 L141 95 L141 120 C141 138 118 150 118 150 C118 150 95 138 95 120 Z" />
+                    <path d="M107 118 L115 126 L131 108" />
+
+                    <!-- lock top-right -->
+                    <rect x="465" y="80" width="30" height="24" rx="3" />
+                    <path d="M472 80 v-9 a8 8 0 0 1 16 0 v9" />
+
+                    <!-- fingerprint bottom-right -->
+                    <circle cx="500" cy="330" r="18" />
+                    <path d="M486 322 a12 12 0 0 1 22 0" />
+                </g>
+
+                <!-- quiet label -->
+                <text x="150" y="65" font-family="Poppins, sans-serif" font-size="15" fill="#3d8bff" opacity="0.6" font-weight="600">Encryption</text>
+                <text x="475" y="150" font-family="Poppins, sans-serif" font-size="14" fill="#3d8bff" opacity="0.6" font-weight="600">Firewall</text>
+
+                <!-- ground shadow -->
+                <ellipse cx="300" cy="500" rx="150" ry="16" fill="#3d8bff" opacity="0.10" />
+
+                <!-- character sitting cross-legged with laptop -->
+                <g>
+                    <!-- legs -->
+                    <path d="M215 470 C215 420 240 400 280 400 C300 400 300 420 290 440 C280 460 250 470 215 470 Z" fill="#1d4a8f"/>
+                    <path d="M385 470 C385 420 360 400 320 400 C300 400 300 420 310 440 C320 460 350 470 385 470 Z" fill="#1d4a8f"/>
+                    <rect x="195" y="452" width="34" height="24" rx="6" fill="#f2f2f2"/>
+                    <rect x="371" y="452" width="34" height="24" rx="6" fill="#f2f2f2"/>
+
+                    <!-- torso -->
+                    <path d="M240 300 C240 260 265 240 300 240 C335 240 360 260 360 300 L365 420 C365 440 335 452 300 452 C265 452 235 440 235 420 Z" fill="#f4f4f4"/>
+
+                    <!-- arms -->
+                    <path d="M245 320 C220 340 205 360 205 385 C205 400 220 405 230 395 L255 360" fill="#f4f4f4"/>
+                    <path d="M355 320 C380 340 395 360 395 385 C395 400 380 405 370 395 L345 360" fill="#f4f4f4"/>
+                    <circle cx="215" cy="392" r="12" fill="#f2b6a0"/>
+                    <circle cx="385" cy="392" r="12" fill="#f2b6a0"/>
+
+                    <!-- laptop -->
+                    <g>
+                        <path d="M255 355 L345 355 L335 400 L265 400 Z" fill="#e8e8e8" stroke="#1d4a8f" stroke-width="2"/>
+                        <rect x="252" y="330" width="12" height="55" rx="2" fill="#f4f4f4" stroke="#1d4a8f" stroke-width="2" transform="rotate(-8 258 357)"/>
+                        <rect x="336" y="330" width="12" height="55" rx="2" fill="#f4f4f4" stroke="#1d4a8f" stroke-width="2" transform="rotate(8 342 357)"/>
+                        <path d="M260 335 L340 335 L336 375 L264 375 Z" fill="#0a1830"/>
+                        <path d="M285 348 l-8 8 8 8 M315 348 l8 8 -8 8 M303 346 l-6 20" stroke="#3d8bff" stroke-width="2" fill="none" stroke-linecap="round"/>
+                    </g>
+
+                    <!-- neck + head -->
+                    <rect x="285" y="225" width="30" height="25" fill="#f2b6a0"/>
+                    <circle cx="300" cy="200" r="38" fill="#f2b6a0"/>
+
+                    <!-- hair -->
+                    <path d="M262 195 C258 160 280 140 300 140 C325 140 342 158 340 190 C336 178 326 172 318 176 C310 168 292 168 284 176 C272 176 264 186 262 195 Z" fill="#0a1830"/>
+
+                    <!-- glasses -->
+                    <circle cx="288" cy="202" r="9" fill="none" stroke="#0a1830" stroke-width="2.5"/>
+                    <circle cx="312" cy="202" r="9" fill="none" stroke="#0a1830" stroke-width="2.5"/>
+                    <path d="M297 202 h6" stroke="#0a1830" stroke-width="2.5"/>
+
+                    <!-- hoodie strings -->
+                    <path d="M285 245 q15 15 30 0" fill="none" stroke="#d8d8d8" stroke-width="2"/>
+                </g>
+            </svg>
+        </div>
+
+    </section>
+
+    <section class="about" id="aboutMe">
+
+        <div class="about-illustration">
+            <svg viewBox="0 0 600 560" xmlns="http://www.w3.org/2000/svg">
+
+                <g fill="none" stroke="#3d8bff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.5">
+                    <path d="M60 90 L82 80 L104 90 L104 114 C104 132 82 144 82 144 C82 144 60 132 60 114 Z" />
+                    <path d="M72 112 L80 120 L96 102" />
+                    <rect x="440" y="60" width="30" height="24" rx="3" />
+                    <path d="M447 60 v-9 a8 8 0 0 1 16 0 v9" />
+                    <path d="M40 220 l-13 11 13 11" />
+                    <path d="M60 220 l13 11 -13 11" />
+                    <circle cx="480" cy="220" r="17" />
+                    <path d="M467 213 a11 11 0 0 1 20 0" />
+                </g>
+
+                <text x="115" y="55" font-family="Poppins, sans-serif" font-size="16" fill="#3d8bff" opacity="0.55" font-weight="700" transform="rotate(-5 115 55)">VPN</text>
+                <text x="330" y="45" font-family="Poppins, sans-serif" font-size="16" fill="#3d8bff" opacity="0.55" font-weight="700" transform="rotate(4 330 45)">SSL</text>
+                <text x="25" y="270" font-family="Poppins, sans-serif" font-size="14" fill="#3d8bff" opacity="0.55" font-weight="700" transform="rotate(-4 25 270)">Firewall</text>
+                <text x="440" y="270" font-family="Poppins, sans-serif" font-size="14" fill="#3d8bff" opacity="0.55" font-weight="700">Kali</text>
+                <text x="35" y="470" font-family="Poppins, sans-serif" font-size="14" fill="#3d8bff" opacity="0.55" font-weight="700" transform="rotate(-3 35 470)">Linux</text>
+                <text x="420" y="460" font-family="Poppins, sans-serif" font-size="14" fill="#3d8bff" opacity="0.55" font-weight="700" transform="rotate(3 420 460)">Python</text>
+
+                <ellipse cx="330" cy="500" rx="180" ry="16" fill="#3d8bff" opacity="0.10" />
+
+                <rect x="180" y="440" width="70" height="70" fill="#e8e8e8"/>
+                <rect x="270" y="380" width="70" height="130" fill="#1d4a8f"/>
+                <rect x="360" y="300" width="70" height="210" fill="#3d8bff"/>
+
+                <g transform="translate(0,0)">
+                    <path d="M230 350 C210 365 195 385 195 410 C195 425 210 428 218 418 L245 385" fill="#f4f4f4"/>
+                    <circle cx="206" cy="415" r="11" fill="#f2b6a0"/>
+
+                    <path d="M255 260 C255 230 275 215 300 215 C325 215 345 230 345 260 L350 355 C350 372 325 382 300 382 C275 382 250 372 250 355 Z" fill="#f4f4f4"/>
+
+                    <path d="M320 280 C340 290 360 300 375 285 L390 265" fill="none" stroke="#f4f4f4" stroke-width="26" stroke-linecap="round"/>
+                    <circle cx="393" cy="260" r="11" fill="#f2b6a0"/>
+
+                    <path d="M255 380 C250 400 245 430 240 460 L262 465 L280 400 Z" fill="#3d8bff"/>
+                    <path d="M330 380 C345 405 358 435 368 455 L346 465 L315 400 Z" fill="#3d8bff"/>
+                    <rect x="222" y="458" width="34" height="22" rx="6" fill="#f2f2f2"/>
+                    <rect x="335" y="450" width="34" height="22" rx="6" fill="#f2f2f2" transform="rotate(-18 352 461)"/>
+
+                    <rect x="285" y="188" width="28" height="24" fill="#f2b6a0"/>
+                    <circle cx="300" cy="165" r="34" fill="#f2b6a0"/>
+                    <path d="M266 162 C263 132 283 112 300 112 C322 112 337 128 335 155 C331 145 322 140 315 144 C307 137 291 137 284 144 C274 144 268 152 266 162 Z" fill="#0a1830"/>
+                    <circle cx="290" cy="167" r="7" fill="none" stroke="#0a1830" stroke-width="2.2"/>
+                    <circle cx="310" cy="167" r="7" fill="none" stroke="#0a1830" stroke-width="2.2"/>
+                    <path d="M297 167 h6" stroke="#0a1830" stroke-width="2.2"/>
+                </g>
+            </svg>
+        </div>
+
+        <div class="about-text">
+            <h2 class="about-title">About <span>me</span></h2>
+            <p class="about-bio">
+                Hey, I'm Rayan, a Cybersecurity graduate from Imam Muhammad ibn
+                Saud Islamic University (GPA 4.61/5). I gained hands-on SOC
+                experience through training at SDAIA, where I monitored and
+                analyzed security alerts using SIEM tools, investigated logs for
+                suspicious activity, and built use cases and dashboards to
+                improve monitoring and reporting. I hold a CompTIA Security+
+                certification and built a malware analysis lab as my graduation
+                project using REMnux and FLARE VM. Now looking to start my
+                career as an entry-level SOC analyst.
+            </p>
+        </div>
+
+    </section>
+
+    <section class="skills" id="skills">
+
+        <div class="projects-heading">
+            <h2 class="section-title">My <span>Skills</span></h2>
+            <p class="section-subtitle">Core areas I've worked in, and the tools I use to get the job done.</p>
+        </div>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <h3 class="skill-title">Cybersecurity</h3>
+                <div class="skill-items">
+                    <div class="skill-item" onclick="openSkillModal('SOC Operations', 'Running the day-to-day work of a Security Operations Center, watching over systems around the clock to catch threats early.')">
+                        <div class="skill-icon"><i class="fa-solid fa-satellite-dish"></i></div>
+                        <span>SOC Operations</span>
+                    </div>
+                    <div class="skill-item" onclick="openSkillModal('Security Monitoring', 'Continuously watching logs and events to spot unusual activity before it turns into a real security problem.')">
+                        <div class="skill-icon"><i class="fa-solid fa-eye"></i></div>
+                        <span>Security Monitoring</span>
+                    </div>
+                    <div class="skill-item" onclick="openSkillModal('Alert Analysis', 'Reviewing security alerts to tell real threats apart from false positives, and prioritizing what needs attention first.')">
+                        <div class="skill-icon"><i class="fa-solid fa-bell"></i></div>
+                        <span>Alert Analysis</span>
+                    </div>
+                    <div class="skill-item" onclick="openSkillModal('Incident Response', 'Following a clear process to contain, investigate, and recover from a security incident as quickly as possible.')">
+                        <div class="skill-icon"><i class="fa-solid fa-bolt"></i></div>
+                        <span>Incident Response</span>
+                    </div>
+                    <div class="skill-item" onclick="openSkillModal('Threat Intelligence', 'Gathering and using information about attacker tactics and known threats to stay one step ahead of them.')">
+                        <div class="skill-icon"><i class="fa-solid fa-brain"></i></div>
+                        <span>Threat Intelligence</span>
+                    </div>
+                    <div class="skill-item" onclick="openSkillModal('Malware Analysis', 'Examining suspicious files or programs to understand what they do and how dangerous they really are.')">
+                        <div class="skill-icon"><i class="fa-solid fa-bug"></i></div>
+                        <span>Malware Analysis</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h3 class="skill-title">Tools</h3>
+                <div class="skill-items">
+                    <div class="skill-item" onclick="openSkillModal('Splunk', 'A SIEM platform used to collect, search, and visualize logs from across an organization to detect threats.')">
+                        <div class="skill-icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <span>Splunk</span>
+                    </div>
+                    <div class="skill-item" onclick="openSkillModal('LogRhythm', 'A SIEM tool used to centralize security logs and build detection rules and monitoring dashboards.')">
+                        <div class="skill-icon"><i class="fa-solid fa-file-lines"></i></div>
+                        <span>LogRhythm</span>
+                    </div>
+                    <div class="skill-item" onclick="openSkillModal('Nmap', 'A network scanning tool used to discover devices, open ports, and running services on a network.')">
+                        <div class="skill-icon"><i class="fa-solid fa-network-wired"></i></div>
+                        <span>Nmap</span>
+                    </div>
+                    <div class="skill-item" onclick="openSkillModal('Burp Suite', 'A web application testing tool used to find security vulnerabilities like injection flaws or broken authentication.')">
+                        <div class="skill-icon"><i class="fa-solid fa-spider"></i></div>
+                        <span>Burp Suite</span>
+                    </div>
+                    <div class="skill-item" onclick="openSkillModal('VirusTotal', 'An online service that scans files and URLs against many antivirus engines to check if they\'re malicious.')">
+                        <div class="skill-icon"><i class="fa-solid fa-virus"></i></div>
+                        <span>VirusTotal</span>
+                    </div>
+                    <div class="skill-item" onclick="openSkillModal('YARA Rules', 'A pattern-matching tool used to identify and classify malware based on its unique characteristics.')">
+                        <div class="skill-icon"><i class="fa-solid fa-fingerprint"></i></div>
+                        <span>YARA Rules</span>
+                    </div>
+                    <div class="skill-item" onclick="openSkillModal('ELK Stack', 'A set of tools (Elasticsearch, Logstash, Kibana) used to collect, search, and visualize log data for security monitoring.')">
+                        <div class="skill-icon"><i class="fa-solid fa-layer-group"></i></div>
+                        <span>ELK Stack</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h3 class="skill-title">Technical</h3>
+                <div class="skill-items">
+                    <div class="skill-item" onclick="openSkillModal('Linux', 'Comfortable working from the terminal to navigate systems, run security tools, and read through logs — the base for most SOC and malware analysis work I do (REMnux, command-line log parsing, and more).')">
+                        <div class="skill-icon"><i class="fa-brands fa-linux"></i></div>
+                        <span>Linux</span>
+                    </div>
+                    <div class="skill-item" onclick="openSkillModal('Windows', 'Familiar with Windows from a defender\'s point of view: reading Event Viewer logs, tracking process activity, and recognizing the attack techniques commonly used against it.')">
+                        <div class="skill-icon"><i class="fa-brands fa-windows"></i></div>
+                        <span>Windows</span>
+                    </div>
+                    <div class="skill-item" onclick="openSkillModal('Networking', 'Understanding how data moves across networks, including IP addressing, protocols, and where attacks can happen.')">
+                        <div class="skill-icon"><i class="fa-solid fa-diagram-project"></i></div>
+                        <span>Networking</span>
+                    </div>
+                    <div class="skill-item" onclick="openSkillModal('Active Directory', 'Microsoft\'s system for managing users, computers, and permissions across an organization\'s network.')">
+                        <div class="skill-icon"><i class="fa-solid fa-sitemap"></i></div>
+                        <span>Active Directory</span>
+                    </div>
+                    <div class="skill-item" onclick="openSkillModal('Python', 'A programming language used to automate security tasks, parse logs, and build small custom tools.')">
+                        <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+                        <span>Python</span>
+                    </div>
+                    <div class="skill-item" onclick="openSkillModal('Virtualization', 'Running isolated virtual machines to safely test tools, simulate attacks, or set up lab environments.')">
+                        <div class="skill-icon"><i class="fa-solid fa-cubes"></i></div>
+                        <span>Virtualization</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="experience" id="experience">
+
+        <div class="projects-heading">
+            <h2 class="section-title">My <span>Experience</span></h2>
+            <p class="section-subtitle">Where I trained, and the hands-on experience I built along the way.</p>
+        </div>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-marker">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div class="timeline-content">
+
+                    <div class="timeline-top">
+                        <div>
+                            <h3 class="timeline-title">SOC &amp; SSA Training</h3>
+                            <p class="timeline-org">Saudi Data and Artificial Intelligence Authority (SDAIA)</p>
+                        </div>
+                        <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Aug – Dec 2025</span>
+                    </div>
+
+                    <div class="timeline-meta">
+                        <span><i class="fa-solid fa-location-dot"></i> Riyadh, Saudi Arabia</span>
+                        <span><i class="fa-solid fa-user-shield"></i> SOC Trainee</span>
+                    </div>
+
+                    <ul class="timeline-checklist">
+                        <li><i class="fa-solid fa-check"></i> Monitored and analyzed security alerts using SIEM tools</li>
+                        <li><i class="fa-solid fa-check"></i> Investigated logs for suspicious and malicious activity</li>
+                        <li><i class="fa-solid fa-check"></i> Gained exposure to incident response via real-world attack logs</li>
+                        <li><i class="fa-solid fa-check"></i> Supported the SSA team in configuring security systems</li>
+                        <li><i class="fa-solid fa-check"></i> Developed use cases and built security dashboards</li>
+                        <li><i class="fa-solid fa-check"></i> Collaborated with the SOC team on daily operations</li>
+                    </ul>
+
+                    <div class="timeline-tools">
+                        <span>Splunk</span>
+                        <span>SIEM</span>
+                        <span>Log Analysis</span>
+                        <span>Dashboards</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="projects" id="projects">
+
+        <div class="projects-heading">
+            <h2 class="section-title">My <span>Projects</span></h2>
+            <p class="section-subtitle">A few things I've built and worked on.</p>
+        </div>
+
+        <div class="projects-grid">
+
+            <div class="project-card project-card-featured">
+                <div class="project-card-preview">
+                    <img src="assets/gallery/malware-cover.png" alt="Malware Analysis Lab project cover" loading="lazy">
+                    <span class="project-file-badge"><i class="fa-solid fa-images"></i> Case study</span>
+                </div>
+                <div class="project-icon"><i class="fa-solid fa-bug"></i></div>
+                <h3 class="project-title">Malware Analysis Lab</h3>
+                <p class="project-desc">Graduation project: built an isolated lab to safely detonate and analyze malware samples, then documented the indicators of compromise.</p>
+                <div class="project-tags">
+                    <span>Static &amp; Dynamic Analysis</span>
+                    <span>Team Project</span>
+                </div>
+                <button class="btn-view-details" onclick="openProjectModal('malware')">View Details <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <div class="project-card project-card-featured">
+                <div class="project-card-preview">
+                    <img src="assets/gallery/cti-cover.png" alt="Cyber Threat Intelligence Report cover" loading="lazy">
+                    <span class="project-file-badge"><i class="fa-solid fa-images"></i> Case study</span>
+                </div>
+                <div class="project-icon"><i class="fa-solid fa-globe"></i></div>
+                <h3 class="project-title">Cyber Threat Intelligence Report</h3>
+                <p class="project-desc">Tuwaiq Academy project: acted as a CTI consulting team producing a full risk assessment for a client considering a job offer abroad.</p>
+                <div class="project-tags">
+                    <span>OSINT</span>
+                    <span>Risk Assessment</span>
+                </div>
+                <button class="btn-view-details" onclick="openProjectModal('cti')">View Details <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <div class="project-card project-card-featured">
+                <div class="project-card-preview">
+                    <img src="assets/rayan-cyber-hero.png" alt="Rayan cybersecurity portfolio hero" loading="lazy">
+                    <span class="project-file-badge"><i class="fa-solid fa-images"></i> Case study</span>
+                </div>
+                <div class="project-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                <h3 class="project-title">This Portfolio Website</h3>
+                <p class="project-desc">My personal portfolio, designed and built from scratch to showcase my skills, experience, and projects in cybersecurity.</p>
+                <div class="project-tags">
+                    <span>HTML/CSS/JS</span>
+                    <span>Personal Branding</span>
+                </div>
+                <button class="btn-view-details" onclick="openProjectModal('portfolio')">View Details <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="certifications" id="certifications">
+
+        <div class="projects-heading">
+            <h2 class="section-title">My <span>Certifications</span></h2>
+            <p class="section-subtitle">Credentials and focused training that support my cybersecurity journey.</p>
+        </div>
+
+        <div class="certifications-grid">
+
+            <article class="certification-card">
+                <div class="certification-top">
+                    <div class="certification-icon"><i class="fa-solid fa-user-shield"></i></div>
+                    <span class="certification-status"><i class="fa-regular fa-file-pdf"></i> Certificate</span>
+                </div>
+                <h3 class="certification-title">SOC L1</h3>
+                <p class="certification-provider">TryHackMe</p>
+                <p class="certification-date"><i class="fa-regular fa-calendar"></i> May 30, 2026</p>
+                <a class="certification-link" href="assets/certificates/soc-l1-tryhackme.pdf" target="_blank" rel="noopener">
+                    View certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </article>
+
+            <article class="certification-card">
+                <div class="certification-top">
+                    <div class="certification-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <span class="certification-status"><i class="fa-regular fa-file-pdf"></i> Certificate</span>
+                </div>
+                <h3 class="certification-title">CompTIA Security+</h3>
+                <p class="certification-provider">CompTIA</p>
+                <p class="certification-date"><i class="fa-regular fa-calendar"></i> Apr 5, 2026</p>
+                <a class="certification-link" href="assets/certificates/comptia-security-plus.pdf" target="_blank" rel="noopener">
+                    View certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </article>
+
+            <article class="certification-card">
+                <div class="certification-top">
+                    <div class="certification-icon"><i class="fa-solid fa-terminal"></i></div>
+                    <span class="certification-status"><i class="fa-regular fa-file-pdf"></i> Certificate</span>
+                </div>
+                <h3 class="certification-title">Cyber Security 101</h3>
+                <p class="certification-provider">TryHackMe</p>
+                <p class="certification-date"><i class="fa-regular fa-calendar"></i> Mar 19, 2026</p>
+                <a class="certification-link" href="assets/certificates/cyber-security-101-tryhackme.pdf" target="_blank" rel="noopener">
+                    View certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </article>
+
+            <article class="certification-card">
+                <div class="certification-top">
+                    <div class="certification-icon"><i class="fa-solid fa-bullseye"></i></div>
+                    <span class="certification-status"><i class="fa-regular fa-file-pdf"></i> Certificate</span>
+                </div>
+                <h3 class="certification-title">Cyber Intelligence and Threats</h3>
+                <p class="certification-provider">Tuwaiq Academy</p>
+                <p class="certification-date"><i class="fa-regular fa-calendar"></i> Jan 15, 2026</p>
+                <a class="certification-link" href="assets/certificates/cyber-intelligence-and-threats-tuwaiq.pdf" target="_blank" rel="noopener">
+                    View certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </article>
+
+            <article class="certification-card">
+                <div class="certification-top">
+                    <div class="certification-icon"><i class="fa-solid fa-building-shield"></i></div>
+                    <span class="certification-status"><i class="fa-regular fa-file-pdf"></i> Certificate</span>
+                </div>
+                <h3 class="certification-title">Cybersecurity Training Certificate</h3>
+                <p class="certification-provider">SOC &amp; SSA · SDAIA</p>
+                <p class="certification-date"><i class="fa-solid fa-award"></i> Professional training</p>
+                <a class="certification-link" href="assets/certificates/cybersecurity-training-soc-ssa-sdaia.pdf" target="_blank" rel="noopener">
+                    View certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </article>
+
+            <article class="certification-card">
+                <div class="certification-top">
+                    <div class="certification-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <span class="certification-status"><i class="fa-regular fa-file-pdf"></i> Certificate</span>
+                </div>
+                <h3 class="certification-title">Splunk Developer</h3>
+                <p class="certification-provider">Splunk</p>
+                <p class="certification-date"><i class="fa-regular fa-calendar"></i> Sep 25, 2025</p>
+                <a class="certification-link" href="assets/certificates/splunk-developer.pdf" target="_blank" rel="noopener">
+                    View certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </article>
+
+        </div>
+
+    </section>
+
+    <section class="contact" id="contactMe">
+    <div class="contact-panel">
+        <div class="contact-copy">
+            <p class="section-kicker"><span></span> Open to opportunities</p>
+
+            <h2 class="section-title">
+                Let's <span>connect</span>
+            </h2>
+
+            <p>
+                Have an opportunity, a security project, or just want to talk
+                cybersecurity? You can reach me directly through email or LinkedIn.
+            </p>
+        </div>
+
+        <div class="contact-links">
+            <a class="contact-link-card" href="mailto:rayan9kb9@gmail.com">
+                <span class="contact-link-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </span>
+
+                <span class="contact-link-content">
+                    <small>Email me</small>
+                    <strong>rayan9kb9@gmail.com</strong>
+                </span>
+
+                <i class="fa-solid fa-arrow-up-right-from-square contact-link-arrow"></i>
+            </a>
+
+            <a
+                class="contact-link-card"
+                href="https://www.linkedin.com/in/rayan-hadadi-b7b187374"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open Rayan Hadadi LinkedIn profile"
+            >
+                <span class="contact-link-icon linkedin-icon">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </span>
+
+                <span class="contact-link-content">
+                    <small>Connect on LinkedIn</small>
+                    <strong>Rayan Hadadi</strong>
+                </span>
+
+                <i class="fa-solid fa-arrow-up-right-from-square contact-link-arrow"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <div class="skill-modal" id="projectModal">
+        <div class="skill-modal-box project-modal-box">
+            <button class="skill-modal-close" onclick="closeProjectModal()">&times;</button>
+            <h3 id="projectModalTitle"></h3>
+            <p class="project-modal-subtitle" id="projectModalSubtitle"></p>
+            <div class="project-modal-tags" id="projectModalTags"></div>
+            <div class="project-gallery" id="projectGallery" aria-label="Project screenshots"></div>
+            <div class="project-actions" id="projectActions"></div>
+            <div id="projectModalBody"></div>
+        </div>
+    </div>
+
+    <div class="skill-modal" id="skillModal">
+        <div class="skill-modal-box">
+            <button class="skill-modal-close" onclick="closeSkillModal()">&times;</button>
+            <h3 id="skillModalTitle"></h3>
+            <p id="skillModalDesc"></p>
+        </div>
+    </div>
+
+    <script>
+        function openSkillModal(title, desc) {
+            document.getElementById('skillModalTitle').textContent = title;
+            document.getElementById('skillModalDesc').textContent = desc;
+            document.getElementById('skillModal').classList.add('active');
+        }
+        function closeSkillModal() {
+            document.getElementById('skillModal').classList.remove('active');
+        }
+        document.getElementById('skillModal').addEventListener('click', function(e) {
+            if (e.target === this) closeSkillModal();
+        });
+
+        const projectsData = {
+            malware: {
+                title: "Malware Analysis Lab",
+                subtitle: "Graduation Project · Imam Muhammad ibn Saud Islamic University · Team of 4",
+                tags: ["VirtualBox", "FLARE VM", "REMnux", "Wireshark", "ProcMon", "VirusTotal", "INetSim"],
+                gallery: [
+                    { src: "assets/gallery/malware-cover.png", alt: "Malware Analysis Lab project cover", caption: "Project cover" },
+                    { src: "assets/gallery/malware-tools-overview.png", alt: "Static and dynamic malware analysis tools used", caption: "Tools overview" },
+                    { src: "assets/gallery/malware-lab-setup.png", alt: "Malware analysis system design and lab requirements", caption: "Isolated lab design" },
+                    { src: "assets/gallery/malware-test-results.png", alt: "Malware analysis testing and results", caption: "Testing and results" }
+                ],
+                sections: [
+                    {
+                        heading: "Overview",
+                        text: "Modern malware is built to evade regular antivirus tools and often hides its behavior until it runs. Our team built a fully isolated lab to safely detonate real malware samples, observe exactly what they do, and pull out indicators of compromise (IOCs) without any risk to a real system."
+                    },
+                    {
+                        heading: "What I worked on",
+                        list: [
+                            "Set up a Windows victim VM (FLARE VM) and a Linux analysis VM (REMnux) inside VirtualBox",
+                            "Isolated the lab network from the host: custom DHCP range, and rerouted DNS through INetSim on REMnux so the malware believes it has internet access while staying fully contained",
+                            "Took a snapshot before every step so we could always roll back to a clean state",
+                            "Ran static analysis with PEview and FLOSS to inspect the file structure and pull out hidden/obfuscated strings, then checked the sample against VirusTotal",
+                            "Ran dynamic analysis by executing the sample and watching it live with ProcMon (file/registry changes) and Wireshark (network traffic, including its HTTP requests)",
+                            "Pulled the sample's SHA256 and MD5 hashes via command line for identification and reporting"
+                        ]
+                    },
+                    {
+                        heading: "Outcome",
+                        text: "We successfully documented the sample's behavior end-to-end — from the files it touched, to the network requests it made — and produced a clear IOC report. It gave me real hands-on experience with the exact workflow a malware analyst uses day to day."
+                    }
+                ]
+            },
+            cti: {
+                title: "Cyber Threat Intelligence Report",
+                subtitle: "Tuwaiq Academy Project · Team of 4",
+                tags: ["OSINT", "Threat Intelligence", "Attack Surface Mapping", "Risk Reporting"],
+                gallery: [
+                    { src: "assets/gallery/cti-cover.png", alt: "Cyber Threat Intelligence report cover", caption: "Report cover" },
+                    { src: "assets/gallery/cti-attack-vectors.png", alt: "Main cyber attack vectors identified in the assessment", caption: "Key attack vectors" },
+                    { src: "assets/gallery/cti-threat-assessment.png", alt: "Threat and risk assessment ranking", caption: "Threat & risk assessment" },
+                    { src: "assets/gallery/cti-recommendations.png", alt: "Immediate and long-term cybersecurity recommendations", caption: "Recommendations" }
+                ],
+                sections: [
+                    {
+                        heading: "The scenario",
+                        text: "Our team played the role of a CTI consulting company. A client had just received a job offer from a university in an unfamiliar city and country, and wanted an independent risk assessment before accepting — covering the university's digital reputation, the safety of the destination city, and its exposure to cyberattacks."
+                    },
+                    {
+                        heading: "What I worked on",
+                        list: [
+                            "Ran OSINT research on the university's leadership using public search platforms, uncovering exposed personal emails and phone numbers that could enable targeted phishing or social engineering",
+                            "Reviewed recent news coverage and public breach-tracking sites, surfacing past incidents such as a third-party ransomware breach and personal email leaks tied to a data breach",
+                            "Mapped the university's external attack surface using Shodan, identifying open ports (SSH, Kerberos, HTTPS) that represent potential entry points if credentials are ever weak",
+                            "Compared candidate destination cities on safety, political stability, infrastructure, and healthcare access to advise on the safest choice for international travel",
+                            "Compiled a full risk register (critical / high / medium) covering ransomware, phishing, exposed ports, and reputational risk, each with a recommended response"
+                        ]
+                    },
+                    {
+                        heading: "Outcome",
+                        text: "We delivered a full intelligence report with an executive summary, a ranked risk assessment, and a prioritized action plan split into immediate (0-30 day) and long-term (1-12 month) recommendations — plus a clear final recommendation on both the safest destination and the cybersecurity steps the university should take first."
+                    }
+                ]
+            },
+            portfolio: {
+                title: "This Portfolio Website",
+                subtitle: "Personal Project · Solo",
+                tags: ["HTML", "CSS", "JavaScript"],
+                gallery: [
+                    { src: "assets/rayan-cyber-hero.png", alt: "Rayan cybersecurity portfolio hero section", caption: "Portfolio hero section" }
+                ],
+                sections: [
+                    {
+                        heading: "Overview",
+                        text: "My personal portfolio, built from scratch to present myself to employers: who I am, what I've trained in, the skills I bring, and the projects I've worked on."
+                    },
+                    {
+                        heading: "What's in it",
+                        list: [
+                            "A hero section introducing me and my focus area",
+                            "An about section with my background and education",
+                            "A categorized, interactive skills section with quick explanations for each skill",
+                            "A timeline of my practical experience",
+                            "This projects section you're looking at right now"
+                        ]
+                    }
+                ]
+            }
+        };
+
+        function openProjectModal(key) {
+            const data = projectsData[key];
+            if (!data) return;
+
+            document.getElementById('projectModalTitle').textContent = data.title;
+            document.getElementById('projectModalSubtitle').textContent = data.subtitle;
+
+            const tagsEl = document.getElementById('projectModalTags');
+            tagsEl.innerHTML = '';
+            data.tags.forEach(tag => {
+                const span = document.createElement('span');
+                span.textContent = tag;
+                tagsEl.appendChild(span);
+            });
+
+            const galleryEl = document.getElementById('projectGallery');
+            galleryEl.innerHTML = '';
+            if (data.gallery && data.gallery.length) {
+                const galleryGrid = document.createElement('div');
+                galleryGrid.className = 'project-gallery-grid';
+                data.gallery.forEach((image, index) => {
+                    const figure = document.createElement('figure');
+                    figure.className = 'project-gallery-item';
+                    figure.innerHTML = `
+                        <button type="button" class="project-gallery-button" onclick="openImagePreview('${image.src}', '${image.alt.replace(/'/g, "\\'")}')" aria-label="View ${image.caption}">
+                            <img src="${image.src}" alt="${image.alt}" loading="lazy">
+                            <span class="project-gallery-caption">${image.caption}<i class="fa-solid fa-expand"></i></span>
+                        </button>
+                    `;
+                    galleryGrid.appendChild(figure);
+                });
+                galleryEl.appendChild(galleryGrid);
+            }
+
+            const actionsEl = document.getElementById('projectActions');
+            actionsEl.innerHTML = '';
+            if (data.report) {
+                actionsEl.innerHTML = `
+                    <a class="project-action project-action-primary" href="${data.report}" target="_blank" rel="noopener">
+                        <i class="fa-regular fa-eye"></i> Open full report
+                    </a>
+                    <a class="project-action project-action-secondary" href="${data.report}" download>
+                        <i class="fa-solid fa-download"></i> Download PDF
+                    </a>
+                `;
+            }
+
+            const bodyEl = document.getElementById('projectModalBody');
+            bodyEl.innerHTML = '';
+            data.sections.forEach(section => {
+                const h4 = document.createElement('h4');
+                h4.className = 'project-modal-heading';
+                h4.textContent = section.heading;
+                bodyEl.appendChild(h4);
+
+                if (section.text) {
+                    const p = document.createElement('p');
+                    p.className = 'project-modal-text';
+                    p.textContent = section.text;
+                    bodyEl.appendChild(p);
+                }
+
+                if (section.list) {
+                    const ul = document.createElement('ul');
+                    ul.className = 'project-modal-list';
+                    section.list.forEach(item => {
+                        const li = document.createElement('li');
+                        li.innerHTML = '<i class="fa-solid fa-check"></i> ' + item;
+                        ul.appendChild(li);
+                    });
+                    bodyEl.appendChild(ul);
+                }
+            });
+
+            document.getElementById('projectModal').classList.add('active');
+        }
+
+        function closeProjectModal() {
+            document.getElementById('projectModal').classList.remove('active');
+        }
+
+        document.getElementById('projectModal').addEventListener('click', function(e) {
+            if (e.target === this) closeProjectModal();
+        });
+
+        function openImagePreview(src, alt) {
+            const preview = document.getElementById('imagePreview');
+            document.getElementById('imagePreviewImage').src = src;
+            document.getElementById('imagePreviewImage').alt = alt;
+            preview.classList.add('active');
+        }
+
+        function closeImagePreview() {
+            document.getElementById('imagePreview').classList.remove('active');
+        }
+
+        document.getElementById('imagePreview').addEventListener('click', function(e) {
+            if (e.target === this) closeImagePreview();
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key !== 'Escape') return;
+            closeProjectModal();
+            closeSkillModal();
+            closeImagePreview();
+        });
+
+        /* ---------- Sticky header background ---------- */
+        const headerBar = document.getElementById('headerBar');
+        function updateHeaderBar() {
+            headerBar.classList.toggle('scrolled', window.scrollY > 12);
+        }
+        updateHeaderBar();
+        window.addEventListener('scroll', updateHeaderBar, { passive: true });
+
+        /* ---------- Mobile menu ---------- */
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+        navToggle.addEventListener('click', function() {
+            const isOpen = navMenu.classList.toggle('open');
+            navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            navToggle.innerHTML = isOpen ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
+        });
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('open');
+                navToggle.setAttribute('aria-expanded', 'false');
+                navToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+            });
+        });
+
+        /* ---------- Active nav link on scroll ---------- */
+        const navLinks = Array.from(navMenu.querySelectorAll('a[href^="#"]'));
+        const trackedSections = navLinks
+            .map(link => document.querySelector(link.getAttribute('href')))
+            .filter(Boolean);
+
+        if ('IntersectionObserver' in window && trackedSections.length) {
+            const navObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    const link = navLinks.find(a => a.getAttribute('href') === '#' + entry.target.id);
+                    if (!link) return;
+                    if (entry.isIntersecting) {
+                        navLinks.forEach(a => a.classList.remove('active-link'));
+                        link.classList.add('active-link');
+                    }
+                });
+            }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+
+            trackedSections.forEach(section => navObserver.observe(section));
+        }
+
+        /* ---------- Scroll reveal ---------- */
+        const revealEls = document.querySelectorAll(
+            '.hero-text, .hero-illustration, .about-illustration, .about-text, ' +
+            '.projects-heading, .skills-grid, .timeline, .projects-grid, ' +
+            '.certifications-grid, .contact-panel'
+        );
+
+        if ('IntersectionObserver' in window) {
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-view');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12 });
+
+            revealEls.forEach(el => {
+                el.classList.add('reveal');
+                revealObserver.observe(el);
+            });
+        } else {
+            revealEls.forEach(el => el.classList.add('reveal', 'in-view'));
+        }
+
+        /* ---------- Back to top ---------- */
+        const backToTop = document.getElementById('backToTop');
+        function updateBackToTop() {
+            backToTop.classList.toggle('visible', window.scrollY > 500);
+        }
+        updateBackToTop();
+        window.addEventListener('scroll', updateBackToTop, { passive: true });
+        backToTop.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+
+    <div class="image-preview" id="imagePreview" role="dialog" aria-modal="true" aria-label="Expanded project image">
+        <button class="image-preview-close" onclick="closeImagePreview()" aria-label="Close image preview">&times;</button>
+        <img id="imagePreviewImage" src="" alt="">
+    </div>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+</body>
+</html>
