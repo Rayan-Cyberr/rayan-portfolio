@@ -4,15 +4,12 @@
 
 const skillModal = document.getElementById("skillModal");
 const projectModal = document.getElementById("projectModal");
-const imagePreview = document.getElementById("imagePreview");
-const imagePreviewImage = document.getElementById("imagePreviewImage");
 
 const skillModalTitle = document.getElementById("skillModalTitle");
 const skillModalDesc = document.getElementById("skillModalDesc");
 const projectModalTitle = document.getElementById("projectModalTitle");
 const projectModalSubtitle = document.getElementById("projectModalSubtitle");
 const projectModalTags = document.getElementById("projectModalTags");
-const projectGallery = document.getElementById("projectGallery");
 const projectActions = document.getElementById("projectActions");
 const projectModalBody = document.getElementById("projectModalBody");
 
@@ -21,12 +18,6 @@ const projectsData = {
         title: "Malware Analysis Lab",
         subtitle: "Graduation Project · Imam Muhammad ibn Saud Islamic University · Team of 4",
         tags: ["VirtualBox", "FLARE VM", "REMnux", "Wireshark", "ProcMon", "VirusTotal", "INetSim"],
-        gallery: [
-            { src: "assets/gallery/malware-cover.png", alt: "Malware Analysis Lab project cover", caption: "Project cover" },
-            { src: "assets/gallery/malware-tools-overview.png", alt: "Static and dynamic malware analysis tools used", caption: "Tools overview" },
-            { src: "assets/gallery/malware-lab-setup.png", alt: "Malware analysis system design and lab requirements", caption: "Isolated lab design" },
-            { src: "assets/gallery/malware-test-results.png", alt: "Malware analysis testing and results", caption: "Testing and results" }
-        ],
         sections: [
             {
                 heading: "Overview",
@@ -53,12 +44,6 @@ const projectsData = {
         title: "Cyber Threat Intelligence Report",
         subtitle: "Tuwaiq Academy Project · Team of 4",
         tags: ["OSINT", "Threat Intelligence", "Attack Surface Mapping", "Risk Reporting"],
-        gallery: [
-            { src: "assets/gallery/cti-cover.png", alt: "Cyber Threat Intelligence report cover", caption: "Report cover" },
-            { src: "assets/gallery/cti-attack-vectors.png", alt: "Main cyber attack vectors identified in the assessment", caption: "Key attack vectors" },
-            { src: "assets/gallery/cti-threat-assessment.png", alt: "Threat and risk assessment ranking", caption: "Threat & risk assessment" },
-            { src: "assets/gallery/cti-recommendations.png", alt: "Immediate and long-term cybersecurity recommendations", caption: "Recommendations" }
-        ],
         sections: [
             {
                 heading: "The scenario",
@@ -84,9 +69,6 @@ const projectsData = {
         title: "This Portfolio Website",
         subtitle: "Personal Project · Solo",
         tags: ["HTML", "CSS", "JavaScript"],
-        gallery: [
-            { src: "assets/rayan-cyber-hero.png", alt: "Rayan cybersecurity portfolio hero section", caption: "Portfolio hero section" }
-        ],
         sections: [
             {
                 heading: "Overview",
@@ -126,9 +108,15 @@ const translations = {
         "experience.title": "Experience", "experience.subtitle": "Where I trained, and the hands-on experience I built along the way.",
         "experience.date": "Aug – Dec 2025", "experience.location": "Riyadh, Saudi Arabia", "experience.role": "SOC Trainee",
         "projects.title": "Projects", "projects.subtitle": "A few things I've built and worked on.",
+        "projects.malwareSummary": "An isolated FLARE VM and REMnux lab for safe malware analysis.",
+        "projects.ctiSummary": "An OSINT-based threat and risk assessment with prioritized recommendations.",
+        "projects.portfolioSummary": "A responsive bilingual portfolio built with HTML, CSS, and JavaScript.",
         "projects.caseStudy": "Case study", "projects.viewDetails": "View Details",
         "certifications.title": "Certifications", "certifications.subtitle": "Credentials and focused training that support my cybersecurity journey.",
         "certifications.certificate": "Certificate", "certifications.viewCertificate": "View certificate", "certifications.professionalTraining": "Professional training",
+        "certifications.socDate": "May 30, 2026", "certifications.securityPlusDate": "Apr 5, 2026",
+        "certifications.cyber101Date": "Mar 19, 2026", "certifications.ctiDate": "Jan 15, 2026",
+        "certifications.splunkDate": "Sep 25, 2025",
         "contact.kicker": "Open to opportunities", "contact.lets": "Let's", "contact.connect": "connect",
         "contact.text": "Have an opportunity, a security project, or just want to talk cybersecurity? You can reach me directly through email or LinkedIn.",
         "contact.emailLabel": "Email me", "contact.linkedinLabel": "Connect on LinkedIn"
@@ -148,9 +136,15 @@ const translations = {
         "experience.title": "الخبرة", "experience.subtitle": "أماكن التدريب والخبرة العملية التي اكتسبتها خلال رحلتي.",
         "experience.date": "أغسطس – ديسمبر 2025", "experience.location": "الرياض، المملكة العربية السعودية", "experience.role": "متدرب SOC",
         "projects.title": "المشاريع", "projects.subtitle": "بعض المشاريع التي أنجزتها وعملت عليها مع فريقي.",
+        "projects.malwareSummary": "مختبر معزول باستخدام FLARE VM وREMnux لتحليل البرمجيات الخبيثة بأمان.",
+        "projects.ctiSummary": "تقييم للتهديدات والمخاطر بالاعتماد على OSINT مع توصيات مرتبة حسب الأولوية.",
+        "projects.portfolioSummary": "موقع شخصي متجاوب وثنائي اللغة باستخدام HTML وCSS وJavaScript.",
         "projects.caseStudy": "دراسة حالة", "projects.viewDetails": "عرض التفاصيل",
         "certifications.title": "الشهادات", "certifications.subtitle": "شهادات ودورات متخصصة تدعم مسيرتي في الأمن السيبراني.",
         "certifications.certificate": "شهادة", "certifications.viewCertificate": "عرض الشهادة", "certifications.professionalTraining": "تدريب مهني",
+        "certifications.socDate": "30 مايو 2026", "certifications.securityPlusDate": "5 أبريل 2026",
+        "certifications.cyber101Date": "19 مارس 2026", "certifications.ctiDate": "15 يناير 2026",
+        "certifications.splunkDate": "25 سبتمبر 2025",
         "contact.kicker": "متاح للفرص المهنية", "contact.lets": "لنتواصل", "contact.connect": "معًا",
         "contact.text": "لديك فرصة وظيفية، مشروع أمني، أو ترغب فقط في الحديث عن الأمن السيبراني؟ يمكنك التواصل معي مباشرة عبر البريد الإلكتروني أو LinkedIn.",
         "contact.emailLabel": "راسلني بالبريد", "contact.linkedinLabel": "تواصل معي عبر LinkedIn"
@@ -279,11 +273,8 @@ function updateLanguage(lang) {
 
     const cards = [
         [".project-card:nth-child(1) .project-title", "Malware Analysis Lab", "مختبر تحليل البرمجيات الخبيثة"],
-        [".project-card:nth-child(1) .project-desc", "Graduation project: built an isolated lab to safely detonate and analyze malware samples, then documented the indicators of compromise.", "مشروع التخرج: بنيت مختبرًا معزولًا لتفجير وتحليل عينات البرمجيات الخبيثة بأمان وتوثيق مؤشرات الاختراق."],
         [".project-card:nth-child(2) .project-title", "Cyber Threat Intelligence Report", "تقرير استخبارات التهديدات السيبرانية"],
-        [".project-card:nth-child(2) .project-desc", "Tuwaiq Academy project: acted as a CTI consulting team producing a full risk assessment for a client considering a job offer abroad.", "مشروع أكاديمية طويق: عملنا كفريق استشارات في استخبارات التهديدات لإعداد تقييم مخاطر متكامل لعميل يدرس عرضًا وظيفيًا خارج المملكة."],
-        [".project-card:nth-child(3) .project-title", "This Portfolio Website", "موقع ملفي الشخصي"],
-        [".project-card:nth-child(3) .project-desc", "My personal portfolio, designed and built from scratch to showcase my skills, experience, and projects in cybersecurity.", "موقعي الشخصي، صممته وبنيته من الصفر لعرض مهاراتي وخبرتي ومشاريعي في الأمن السيبراني."]
+        [".project-card:nth-child(3) .project-title", "This Portfolio Website", "موقع ملفي الشخصي"]
     ];
     cards.forEach(([selector,en,ar]) => { const el=document.querySelector(selector); if(el) el.textContent=currentLanguage === "ar" ? ar : en; });
 
@@ -292,15 +283,6 @@ function updateLanguage(lang) {
         el.textContent = currentLanguage === "ar" ? "عرض الشهادة " : "View certificate ";
         if (icon) el.appendChild(icon);
     });
-    document.querySelectorAll(".certification-card").forEach((card) => {
-        const date = card.querySelector(".certification-date");
-        if (!date) return;
-        const icon = date.querySelector("i");
-        if (icon && card.querySelector(".certification-title")?.textContent === "Cybersecurity Training Certificate") {
-            date.lastChild.textContent = currentLanguage === "ar" ? " تدريب مهني" : " Professional training";
-        }
-    });
-
     languageButtons.forEach((button) => {
         const active = button.dataset.lang === currentLanguage;
         button.classList.toggle("active", active);
@@ -328,60 +310,6 @@ function showSkillModal(title, description) {
 
 function closeSkillModal() {
     skillModal.classList.remove("active");
-}
-
-function showImagePreview(src, alt) {
-    imagePreviewImage.src = src;
-    imagePreviewImage.alt = alt;
-    imagePreview.classList.add("active");
-}
-
-function closeImagePreview() {
-    imagePreview.classList.remove("active");
-    imagePreviewImage.removeAttribute("src");
-    imagePreviewImage.alt = "";
-}
-
-function createProjectGallery(data) {
-    projectGallery.replaceChildren();
-
-    if (!Array.isArray(data.gallery) || data.gallery.length === 0) {
-        return;
-    }
-
-    const galleryGrid = document.createElement("div");
-    galleryGrid.className = "project-gallery-grid";
-
-    data.gallery.forEach((image) => {
-        const figure = document.createElement("figure");
-        figure.className = "project-gallery-item";
-
-        const button = document.createElement("button");
-        button.type = "button";
-        button.className = "project-gallery-button";
-        button.setAttribute("aria-label", `View ${image.caption}`);
-        button.addEventListener("click", () => showImagePreview(image.src, image.alt));
-
-        const img = document.createElement("img");
-        img.src = image.src;
-        img.alt = image.alt;
-        img.loading = "lazy";
-        img.decoding = "async";
-
-        const caption = document.createElement("span");
-        caption.className = "project-gallery-caption";
-        caption.append(document.createTextNode(image.caption));
-
-        const expandIcon = document.createElement("i");
-        expandIcon.className = "fa-solid fa-expand";
-        caption.appendChild(expandIcon);
-
-        button.append(img, caption);
-        figure.appendChild(button);
-        galleryGrid.appendChild(figure);
-    });
-
-    projectGallery.appendChild(galleryGrid);
 }
 
 function createProjectActions(data) {
@@ -463,7 +391,6 @@ function showProjectModal(key) {
         projectModalTags.appendChild(span);
     });
 
-    createProjectGallery(data);
     createProjectActions(data);
     createProjectBody(data);
     projectModal.classList.add("active");
@@ -491,16 +418,14 @@ document.querySelectorAll("[data-close-modal]").forEach((button) => {
         const modalName = button.dataset.closeModal;
         if (modalName === "skill") closeSkillModal();
         if (modalName === "project") closeProjectModal();
-        if (modalName === "image") closeImagePreview();
     });
 });
 
-[skillModal, projectModal, imagePreview].forEach((modal) => {
+[skillModal, projectModal].forEach((modal) => {
     modal.addEventListener("click", (event) => {
         if (event.target !== modal) return;
         if (modal === skillModal) closeSkillModal();
         if (modal === projectModal) closeProjectModal();
-        if (modal === imagePreview) closeImagePreview();
     });
 });
 
@@ -508,7 +433,6 @@ document.addEventListener("keydown", (event) => {
     if (event.key !== "Escape") return;
     closeSkillModal();
     closeProjectModal();
-    closeImagePreview();
 });
 
 /* ---------- Sticky header background ---------- */
